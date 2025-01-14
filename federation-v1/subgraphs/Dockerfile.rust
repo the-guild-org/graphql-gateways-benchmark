@@ -10,7 +10,7 @@ COPY subgraph.rs ./
 RUN touch subgraph.rs
 RUN cargo build --release
 
-FROM debian:12.8
+FROM debian:12.9
 COPY --from=builder /usr/src/subgraph/target/release/subgraph /usr/local/bin/subgraph
 
 CMD subgraph
