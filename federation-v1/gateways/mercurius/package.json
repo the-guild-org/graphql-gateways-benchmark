@@ -8,7 +8,7 @@
     "typescript": "5.7.3",
     "graphql": "16.10.0",
     "fastify": "5.2.1",
-    "@mercuriusjs/gateway": "4.0.1"
+    "@mercuriusjs/gateway": "5.0.0"
   },
   "resolutions": {
     "graphql": "16.10.0"

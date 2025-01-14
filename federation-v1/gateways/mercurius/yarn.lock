@@ -222,29 +222,30 @@
   resolved "https://registry.yarnpkg.com/@lukeed/ms/-/ms-2.0.2.tgz#07f09e59a74c52f4d88c6db5c1054e819538e2a8"
   integrity sha512-9I2Zn6+NJLfaGoz9jN3lpwDgAYvfGeNYdbAIjJOqzs4Tpc+VU3Jqq4IofSUBKajiDS8k9fZIg18/z13mpk1bsA==
 
-"@mercuriusjs/federation@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@mercuriusjs/federation/-/federation-4.0.0.tgz#2d9691aff2ba4b36555018b91f2f8c9370d8c7bf"
-  integrity sha512-dNwEjiXxSXOAvGO49wQq6YwOiD53dpu0m1ViP7V+weLeYN4h4n2b/RHeOs0fo2JBEWLQniDHUNfaw2Z+qIEM1Q==
+"@mercuriusjs/federation@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@mercuriusjs/federation/-/federation-5.0.0.tgz#054c328ac93a351f0abe9fbdb0cb4a4ab78e5dde"
+  integrity sha512-5E2S3mgxq+yK4XZm0UMms3lcG3QG/83xh8mmo/XyjwQiT8DulX8ibBXvlQtmOO4g4U9N+AUEqrqPfnoC5I+TSA==
   dependencies:
     "@fastify/error" "^4.0.0"
     graphql "^16.6.0"
-    mercurius "^15.0.0"
+    mercurius "^16.0.0"
 
-"@mercuriusjs/gateway@4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@mercuriusjs/gateway/-/gateway-4.0.1.tgz#3af192ab6571a8f9daf08594d0c93d94f3ddef83"
-  integrity sha512-wa4QTrHRSgESa7mrB95Pm7L+je0SEOOBzKsfKOwy/12wj02QUhRGQ9thJTrn1sNJ/PbD8le04JG0eJbeG0Ptxw==
+"@mercuriusjs/gateway@5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@mercuriusjs/gateway/-/gateway-5.0.0.tgz#462894864459ac5f05c82ea6c47ccdba7ed54d73"
+  integrity sha512-YpjSOZzz8Y99chHhI3j2Y0YTWTb6FqMBdgh19azYqp4rfXsniWKyUjoAhoNqrhYXraGTGJSXA72PgG5OGFAC1A==
   dependencies:
-    "@mercuriusjs/federation" "^4.0.0"
+    "@mercuriusjs/federation" "^5.0.0"
     "@mercuriusjs/subscription-client" "^2.0.0"
     fastify-plugin "^5.0.0"
     graphql "^16.6.0"
     graphql-ws "^5.11.2"
-    mercurius "^15.0.0"
+    mercurius "^16.0.0"
     p-map "^4.0.0"
     single-user-cache "^1.0.0"
     tiny-lru "^11.0.0"
+    undici "^7.2.1"
     use-strict "1.0.1"
     ws "^8.11.0"
 
@@ -484,7 +485,7 @@ fast-deep-equal@^3.1.3:
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
   integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
 
-fast-json-stringify@^5.8.0:
+fast-json-stringify@^5.16.1:
   version "5.16.1"
   resolved "https://registry.yarnpkg.com/fast-json-stringify/-/fast-json-stringify-5.16.1.tgz#a6d0c575231a3a08c376a00171d757372f2ca46e"
   integrity sha512-KAdnLvy1yu/XrRtP+LJnxbBGrhN+xXu+gt3EUvZhYGKCr3lFHq/7UFJHHFgmJKoqlh6B40bZLEv7w46B0mqn1g==
@@ -621,13 +622,13 @@ glob@^11.0.0:
     package-json-from-dist "^1.0.0"
     path-scurry "^2.0.0"
 
-graphql-jit@0.8.6:
-  version "0.8.6"
-  resolved "https://registry.yarnpkg.com/graphql-jit/-/graphql-jit-0.8.6.tgz#c8bf91842670cd3153e09f789884c2192d0e770c"
-  integrity sha512-oVJteh/uYDpIA/M4UHrI+DmzPnX1zTD0a7Je++JA8q8P68L/KbuepimDyrT5FhL4HAq3filUxaFvfsL6/A4msw==
+graphql-jit@0.8.7:
+  version "0.8.7"
+  resolved "https://registry.yarnpkg.com/graphql-jit/-/graphql-jit-0.8.7.tgz#831b1a4c16b1e29cc8ed9d171f33a7da4bce2821"
+  integrity sha512-KGzCrsxQPfEiXOUIJCexWKiWF6ycjO89kAO6SdO8OWRGwYXbG0hsLuTnbFfMq0gj7d7/ib/Gh7jtst7FHZEEjw==
   dependencies:
     "@graphql-typed-document-node/core" "^3.2.0"
-    fast-json-stringify "^5.8.0"
+    fast-json-stringify "^5.16.1"
     generate-function "^2.3.1"
     lodash.memoize "^4.1.2"
     lodash.merge "4.6.2"
@@ -737,25 +738,24 @@ lru-cache@^11.0.0:
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-11.0.2.tgz#fbd8e7cf8211f5e7e5d91905c415a3f55755ca39"
   integrity sha512-123qHRfJBmo2jXDbo/a5YOQrJoHF/GNQTLzQ5+IdK5pWpceK17yRc6ozlWd25FxvGKQbIUs91fDFkXmDHTKcyA==
 
-mercurius@^15.0.0:
-  version "15.1.0"
-  resolved "https://registry.yarnpkg.com/mercurius/-/mercurius-15.1.0.tgz#c25a5b9edd61b0e8b52ba2b94a95e05f2fffb9b1"
-  integrity sha512-/hmhLpT3Yuk+dQe5Rv+PMRZtEnLDheRVwHzffM+FWY/m+KAEqh2lh89ZdEAkCa7UsYQh2cHcT7Uzm6xyvZxbSw==
+mercurius@^16.0.0:
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/mercurius/-/mercurius-16.0.1.tgz#6a77a0ea1802f35310a9dd54505d3528c6f8a9f6"
+  integrity sha512-Yyu7nku6UH+92p3tht22A4lof1y6FQigHTgSjZp7iAElwIvKEo9HOdfTbSWvSvAFx8+Zaa66gLsIBubC6xd0iw==
   dependencies:
     "@fastify/error" "^4.0.0"
     "@fastify/static" "^8.0.0"
     "@fastify/websocket" "^11.0.0"
     fastify-plugin "^5.0.0"
-    graphql-jit "0.8.6"
+    graphql-jit "0.8.7"
     mqemitter "^6.0.0"
     p-map "^4.0.0"
     quick-lru "^7.0.0"
     readable-stream "^4.0.0"
     safe-stable-stringify "^2.3.0"
-    secure-json-parse "^2.7.0"
+    secure-json-parse "^3.0.0"
     single-user-cache "^1.0.0"
     tiny-lru "^11.0.0"
-    undici "^6.19.8"
     ws "^8.2.2"
 
 mime@^3:
@@ -941,11 +941,6 @@ safe-stable-stringify@^2.3.0, safe-stable-stringify@^2.3.1, safe-stable-stringif
   resolved "https://registry.yarnpkg.com/safe-stable-stringify/-/safe-stable-stringify-2.5.0.tgz#4ca2f8e385f2831c432a719b108a3bf7af42a1dd"
   integrity sha512-b3rppTKm9T+PsVCBEOUR46GWI7fdOs00VKZ1+9c1EWDaDMvjQc6tUwuFyIprgGgTcWoVHSKrU8H31ZHA2e0RHA==
 
-secure-json-parse@^2.7.0:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/secure-json-parse/-/secure-json-parse-2.7.0.tgz#5a5f9cd6ae47df23dba3151edd06855d47e09862"
-  integrity sha512-6aU+Rwsezw7VR8/nyvKTx8QpWH9FrcYiXXlqC4z5d5XQBDRqtbfsRjnwGyqbi3gddNtWHuEk9OANUotL26qKUw==
-
 secure-json-parse@^3.0.0, secure-json-parse@^3.0.1:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/secure-json-parse/-/secure-json-parse-3.0.2.tgz#255b03bb0627ba5805f64f384b0a7691d8cb021b"
@@ -1104,10 +1099,10 @@ typescript@5.7.3:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.7.3.tgz#919b44a7dbb8583a9b856d162be24a54bf80073e"
   integrity sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==
 
-undici@^6.19.8:
-  version "6.21.0"
-  resolved "https://registry.yarnpkg.com/undici/-/undici-6.21.0.tgz#4b3d3afaef984e07b48e7620c34ed8a285ed4cd4"
-  integrity sha512-BUgJXc752Kou3oOIuU1i+yZZypyZRqNPW0vqoMPl8VaoalSfeR0D8/t4iAS3yirs79SSMTxTag+ZC86uswv+Cw==
+undici@^7.2.1:
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-7.2.1.tgz#897dc535f78bee62217efc0c5f50ea6b5f078b64"
+  integrity sha512-U2k0XHLJfaciARRxDcqTk2AZQsGXerHzdvfCZcy1hNhSf5KCAF4jIQQxL+apQviOekhRFPqED6Of5/+LcUSLzQ==
 
 use-strict@1.0.1:
   version "1.0.1"
